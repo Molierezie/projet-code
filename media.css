@@ -1,0 +1,546 @@
+/*:root{
+    --text-generale-color:red;
+    --bigger-letter:20em;
+}
+
+les 2 traits indiquent que c'est une propriété personalisé. Sélecteur global pour le script celui qui est à la racine :root
+
+
+.box{
+    height: 20em;
+    padding: 2em;
+}
+
+.color{
+    background-color: darkred;
+    border: solid;
+    margin: 2em;
+}
+
+@media (prefers-color-scheme: light)
+ {
+    .light{
+        background-color: white;
+        color: black;
+    }
+}
+
+@media (prefers-color-scheme: dark)
+{
+    .dark{
+        background-color: black;
+        color: white;
+    }
+}
+
+.indentify{
+    color: var(--text-generale-color);
+}
+/*au lieu de indiquer la couleur on met var( directement le nom de la variable)                           
+     Avec ce système on peut intérargir avec autant d'élément à partir d'un seul
+.biger{
+    font-size: var(--bigger-letter);
+
+}
+
+.letoie{
+    color: var(--text-generale-color);
+
+}
+
+/*Exercice : Soit mettre montagne couleur claire ou couleur sombre*/
+
+/* VERSION MOBILE FIRST 
+
+{
+    margin: 0;
+    padding: 0;
+}
+
+Partie 1
+
+.contenair1
+{
+    height: 20vh;
+    background-image: url(./montagne\ css.png), linear-gradient(300deg,#12c2e9, #c471ed, #f64f59);
+    background-size: cover;
+    background-size: cover = afin que l'image couvre bien tout l'espace qu'on lui a alloué quitte à croquer un peu en haut, en bas et sur les côtés.
+    background-blend-mode:soft-light;
+}
+
+Partie photo
+
+.contenair2
+{
+    height: 1000px;
+    background-color: white;
+}
+
+Partie 1
+
+.partie1
+{
+    height: 400px;
+    float: left;
+}
+
+h1
+{
+    font-size: 170px;
+    text-align: center;
+    font-family: Tahoma;
+}
+
+hr
+{
+    width: 30%;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.p
+{
+    margin: 1em;
+    text-align: center;
+}
+
+Partie 2
+
+.bouton
+{
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    padding: 5px;
+    border: none;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 1em;
+    margin-left: 40%;
+    border-radius: 20%;
+}
+
+.partie
+{
+    height: 400px;
+}
+
+h1
+{
+    font-size: 170px;
+    text-align: center;
+    font-family: Tahoma;
+}
+
+hr
+{
+    width: 30%;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.p
+{
+    margin: 1em;
+    text-align: center;
+}
+
+.bouton
+{
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    padding: 5px;
+    border: none;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 1em;
+    margin-left: 40%;
+    border-radius: 20%;
+}
+
+Partie 3
+
+.partie
+{
+    height: 400px;
+}
+
+h1
+{
+    font-size: 170px;
+    text-align: center;
+    font-family: Tahoma;
+}
+
+hr
+{
+    width: 30%;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.p
+{
+    margin: 1em;
+    text-align: center;
+}
+
+.bouton
+{
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    padding: 5px;
+    border: none;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 1em;
+    margin-left: 40%;
+    border-radius: 20%;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contenair1{
+        height: ;
+
+    }
+}
+
+
+
+hr
+width: 30%;
+    margin: auto;
+    border: 2px solid black;
+    margin-left: 130%;
+}
+
+h1 margin : 120%
+hr margin : 130%
+Bouton : 130%
+P: margin: 1em;
+    text-align: center;
+    padding-top: 8%;
+    margin-left: 45%;
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+ Mode deskop officel
+
+Partie 1 
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.contenair1
+{
+    height: 60vh;
+    background-image: url(./montagne\ css.png), url(./ciel\ nuit.jpeg);
+    background-size: cover;
+    background-blend-mode:soft-light;
+}
+
+
+.contenair2
+{
+    height: 900px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.T
+{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 1em;
+    
+}
+
+p
+{
+    width: 50%;
+    padding-left: 50%;
+    position: relative;
+    bottom: 50%
+
+}
+
+h1
+{
+    font-size: 170px;
+    padding-left: 30%;
+}
+
+hr
+{
+    width: 10%;
+    margin-left: 30% ;
+    border: 2px solid black;
+    margin-bottom: 2em;
+}
+
+.bouton
+{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin-left: 30% ;
+    position: relative;
+    bottom: 20%;
+    border-radius: 1em;
+}
+
+#h2
+ {
+    font-size: 170px;
+    padding-left: 60%;
+ }
+
+#hr2
+{
+    width: 10%;
+    margin-left: 60% ;
+    border: 2px solid black;
+    margin-bottom: 2em;
+}
+
+#p2
+{
+    width: 50%;
+    padding-left: 25%;
+    position: relative;
+    bottom: 50%
+
+}
+
+#bouton2
+{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin-left: 60% ;
+    position: relative;
+    bottom: 20%;
+    border-radius: 1em;
+}
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.contenair1
+{
+    height: 15vh;
+    background-image: url(./montagne\ css.png), linear-gradient(300deg,#12c2e9, #c471ed, #f64f59);
+    background-size: cover;
+    background-blend-mode:soft-light;
+}
+
+.contenair2
+{
+    height: 1200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.T
+{
+    height: 280px;
+    background-color: white;
+    width: 100%;
+}
+
+h1
+{
+    font-size: 100px;
+    text-align: center;
+    font-family: fangsong;
+}
+
+hr
+{
+    width: 20%;
+    border: 2px solid black;
+    margin-left: 40%;
+    margin-bottom: 1em;
+}
+
+p
+{
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.bouton
+{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin-left: 40%;
+    border-radius: 1em;
+}
+
+#h2
+ {
+    font-size: 100px;
+    text-align: center;
+    font-family: fangsong;
+ }
+
+#hr2
+{
+    width: 20%;
+    border: 2px solid black;
+    margin-left: 40%;
+    margin-bottom: 1em;
+}
+
+#p2
+{
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#bouton2
+{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin-left: 40%;
+    border-radius: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    
+.contenair1
+{
+    height: 60vh;
+    background-image: url(./montagne\ css.png), url(./ciel\ nuit.jpeg);
+    background-size: cover;
+    background-blend-mode:soft-light;
+}
+
+.contenair2
+{
+    height: 900px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.T
+{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 1em;
+    
+}
+
+p
+{
+    width: 50%;
+    padding-left: 50%;
+    position: relative;
+    bottom: 50%
+
+}
+
+h1
+{
+    font-size: 170px;
+    padding-left: 30%;
+}
+
+hr
+{
+    width: 10%;
+    margin-left: 30% ;
+    border: 2px solid black;
+    margin-bottom: 2em;
+}
+
+.bouton
+{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin-left: 30% ;
+    position: relative;
+    bottom: 20%;
+    border-radius: 1em;
+}
+
+#h2
+ {
+    font-size: 170px;
+    padding-left: 60%;
+ }
+
+#hr2
+{
+    width: 10%;
+    margin-left: 60% ;
+    border: 2px solid black;
+    margin-bottom: 2em;
+}
+
+#p2
+{
+    width: 50%;
+    padding-left: 25%;
+    position: relative;
+    bottom: 50%
+
+}
+
+#bouton2
+{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin-left: 60% ;
+    position: relative;
+    bottom: 20%;
+    border-radius: 1em;
+}
+}
